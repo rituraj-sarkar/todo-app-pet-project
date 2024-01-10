@@ -4,7 +4,7 @@ export const refreshAccessToken = async () => {
   try {
     // Make a request to /refresh to get a new access token
     const response = await axios.get(
-      "http://localhost:8088/refreshAccesToken",
+      "https://todo-app-backend-tf51.onrender.com/refreshAccesToken",
       {
         headers: {
           "Content-Type": "application/json",

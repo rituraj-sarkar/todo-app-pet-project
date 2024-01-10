@@ -10,7 +10,7 @@ import axios from "axios";
 
 const USER_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
-const REGISTER_URL = "http://localhost:8088/register";
+const REGISTER_URL = "https://todo-app-backend-tf51.onrender.com/register";
 
 export function Register() {
   const userRef = useRef();

@@ -1,10 +1,7 @@
 import { useEffect, useState } from "react";
 import { CreateTodo } from "./components/CreateTodo";
 import { Todos } from "./components/Todos";
-import { Login } from "./components/Login";
-import { Register } from "./components/Register";
 import { Routes, Route } from "react-router-dom";
-import { Layout } from "./components/Layout";
 import Logout from "./components/Logout";
 import { refreshAccessToken } from "./api/axios";
 import axios from "axios";

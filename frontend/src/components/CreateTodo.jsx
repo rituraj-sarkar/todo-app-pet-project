@@ -24,7 +24,7 @@ export function CreateTodo({ user, setTodos }) {
       <br />
       <button
         onClick={async () => {
-          await fetch(`http://localhost:8088/todo`, { // Can be modified, this endpoint can return the particular todo created and same will be appended in the current set, we can avoid 1 network call
+          await fetch(`https://todo-app-backend-tf51.onrender.com/todo`, { // Can be modified, this endpoint can return the particular todo created and same will be appended in the current set, we can avoid 1 network call
             method: "POST",
             body: JSON.stringify({
               title: title,
@@ -35,7 +35,7 @@ export function CreateTodo({ user, setTodos }) {
               "Authorization": `Bearer ${user}`
             },
           });
-          const res = await fetch(`http://localhost:8088/todos`, {
+          const res = await fetch(`https://todo-app-backend-tf51.onrender.com/todos`, {
             method:"GET",
             headers: {
               "content-type": "application/json",

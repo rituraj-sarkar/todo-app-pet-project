@@ -5,7 +5,7 @@ function Logout({ setLoggedInUser }) {
   const handleLogout = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.get("http://localhost:8088/logout", {
+      const res = await axios.get("https://todo-app-backend-tf51.onrender.com/logout", {
         headers: {
           "Content-Type": "application/json",
         },

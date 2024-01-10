@@ -7,7 +7,7 @@ export function Todos({ user, setUser, todos, setTodos }) {
   const axiosInstance = createAxiosInstance({ user, setUser });
   useEffect(() => {
     const loadData = async () => {
-      const res = await axiosInstance.get(`http://localhost:8088/todos`, {
+      const res = await axiosInstance.get(`https://todo-app-backend-tf51.onrender.com/todos`, {
         headers: {
           "content-type": "application/json",
         },

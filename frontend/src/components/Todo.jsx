@@ -6,7 +6,7 @@ function Todo({ todo }) {
       <button
         onClick={async () => {
           await axiosInstance.put(
-            `http://localhost:8088/completed`,
+            `https://todo-app-backend-tf51.onrender.com/completed`,
             {
               id: todo._id,
             },
@@ -17,7 +17,7 @@ function Todo({ todo }) {
               withCredentials: true,
             }
           );
-          const res = await axiosInstance.get(`http://localhost:8088/todos`, {
+          const res = await axiosInstance.get(`https://todo-app-backend-tf51.onrender.com/todos`, {
             headers: {
               "content-type": "application/json",
             },
