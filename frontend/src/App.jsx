@@ -17,11 +17,9 @@ function App() {
   const [user, setUser] = useState();
 
   useEffect(() => {
-    console.log("reloaded :" + user);
     const persistedUser = async () => {
       try {
         const res = await refreshAccessToken();
-        console.log(res);
         setUser(res);
       } catch (err) {
         console.log(err);

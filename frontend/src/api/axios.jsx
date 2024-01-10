@@ -12,7 +12,6 @@ export const refreshAccessToken = async () => {
         withCredentials: true,
       }
     );
-    console.log(`refreshed access token ${response}`);
 
     const newAccessToken = response.data.accessToken;
 

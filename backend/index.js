@@ -55,7 +55,7 @@ app.post("/todo", verifyJwt, createTodoEntry);
 app.get("/todos", verifyJwt, getTodos);
 app.put("/completed", verifyJwt, completeTodo);
 
-// console.log(process.env.PORT);
+
 app.listen(process.env.PORT, () => {
   console.log(`Backend server running on port ${process.env.PORT}`);
 });

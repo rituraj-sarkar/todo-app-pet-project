@@ -11,7 +11,6 @@ function Logout({ setLoggedInUser }) {
         },
         withCredentails: true,
       });
-      console.log(res);
       setLoggedInUser(undefined);
       navigate("/");
     } catch (err) {

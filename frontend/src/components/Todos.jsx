@@ -13,7 +13,6 @@ export function Todos({ user, setUser, todos, setTodos }) {
         },
         withCredentials: true,
       });
-      console.log(res.data);
       setTodos(res.data.todos);
     };
     loadData();

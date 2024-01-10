@@ -68,7 +68,6 @@ export function Register() {
           withCredentials: true,
         }
       );
-      console.log(response);
       setSuccess(true);
     } catch (err) {
       console.log(err);

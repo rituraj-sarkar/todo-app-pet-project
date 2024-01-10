@@ -38,7 +38,6 @@ export function Login({ setLoggedInUser }) {
           withCredentails: true,
         }
       );
-      console.log(res);
       setLoggedInUser(res.data.accessToken);
       navigate("/");
       // setAuth({ user, pwd, roles, accessToken });
